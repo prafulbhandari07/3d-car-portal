@@ -8,7 +8,11 @@ function App() {
   return (
     <>
       <div className="w-full h-full overflow-hidden relative bg-black">
-        <Canvas shadows camera={{ position: [0, 0, 5], fov: 30 }}>
+        <Canvas
+          shadows
+          camera={{ position: [0, 0, 5], fov: 30 }}
+          gl={{ powerPreference: "high-performance"}}
+        >
           <Experience active={active} setActive={setActive} />
         </Canvas>
         <div
