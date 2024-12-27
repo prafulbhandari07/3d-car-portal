@@ -46,7 +46,7 @@ const Experience = ({ active, setActive }) => {
         rotation-y={Math.PI / 8}
         preset={"city"}
         name={"GTR"}
-        color={"#fcbe21"}
+        color={"#e63232"}
         active={active}
         setActive={setActive}
       >
@@ -91,7 +91,7 @@ const Experience = ({ active, setActive }) => {
         rotation-y={-Math.PI / 8}
         preset={"sunset"}
         name={"RB19"}
-        color={"#2b2ee0"}
+        color={"#2343c2"}
         active={active}
         setActive={setActive}
       >
