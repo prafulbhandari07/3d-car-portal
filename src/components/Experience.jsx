@@ -46,7 +46,7 @@ const Experience = ({ active, setActive }) => {
         rotation-y={Math.PI / 8}
         preset={"city"}
         name={"GTR"}
-        color={"#f00"}
+        color={"#fcbe21"}
         active={active}
         setActive={setActive}
       >
@@ -57,7 +57,11 @@ const Experience = ({ active, setActive }) => {
             rotation-y={0.3}
           />
         ) : (
-          <GTRModel scale={0.5} position={[-0.1,-0.6,-0.2]} rotation-y={-0.02}/>
+          <GTRModel
+            scale={0.5}
+            position={[-0.1, -0.6, -0.2]}
+            rotation-y={-0.02}
+          />
         )}
       </CarStage>
 
@@ -66,7 +70,7 @@ const Experience = ({ active, setActive }) => {
         preset={"sunset"}
         position-z={0.2}
         name={"Mclaren"}
-        color={"#0f0"}
+        color={"#ff6803"}
         active={active}
         setActive={setActive}
       >
@@ -87,7 +91,7 @@ const Experience = ({ active, setActive }) => {
         rotation-y={-Math.PI / 8}
         preset={"sunset"}
         name={"RB19"}
-        color={"white"}
+        color={"#2b2ee0"}
         active={active}
         setActive={setActive}
       >
