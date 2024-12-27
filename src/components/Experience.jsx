@@ -1,17 +1,46 @@
-import { Environment, OrbitControls, useTexture } from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
+import RB19Model from "./McLaren";
+import CarStage from "./CarStage";
+import McLarenModel from "./McLaren";
 
 const Experience = () => {
-  const map = useTexture("textures/tokyo.jpg");
   return (
     <>
       <ambientLight intensity={0.5} />
-      <Environment preset="park" />
       <OrbitControls />
-      <mesh>
-        <sphereGeometry args={[5, 64, 64]} />
-        <meshStandardMaterial map={map} side={THREE.BackSide} />
-      </mesh>
+
+      <CarStage
+        texture={"textures/tokyo.jpg"}
+        position-x={-1.7}
+        rotation-y={Math.PI / 8}
+        preset={"city"}
+        name={"Tokyo"}
+        color={"#f00"}
+      >
+        <McLarenModel scale={0.3} position-y={-0.5} />
+      </CarStage>
+
+      <CarStage
+        texture={"textures/spa.jpg"}
+        preset={"sunset"}
+        position-z={-0.3}
+        name={"Senna"}
+        color={"#0f0"}
+      >
+        <McLarenModel scale={0.3} position-y={-0.5} />
+      </CarStage>
+
+      <CarStage
+        texture={"textures/spa.jpg"}
+        position-x={1.7}
+        rotation-y={-Math.PI / 8}
+        preset={"sunset"}
+        name={"Monaco"}
+        color={"#00f"}
+      >
+        <McLarenModel scale={0.3} position-y={-0.5} />
+      </CarStage>
     </>
   );
 };
