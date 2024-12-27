@@ -4,9 +4,9 @@ import React from "react";
 const Loader = () => {
   return (
     <Html>
-      <div className="absolute top-0 left-0 w-[100vw] h-[100vh] flex justify-center items-center ">
+      <div className="absolute w-[100vw] h-[100vh] flex justify-center items-center">
         <div className="w-full h-full rounded-full font-bold text-white ">
-          Please wait while we load the models...
+          Loading...
         </div>
       </div>
     </Html>
